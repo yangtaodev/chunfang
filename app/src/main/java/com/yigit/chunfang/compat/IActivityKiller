@@ -1,0 +1,14 @@
+import android.os.IBinder;
+import android.os.Message;
+
+public interface IActivityKiller {
+    void finishLaunchActivity(Message var1);
+
+    void finishResumeActivity(Message var1);
+
+    void finishPauseActivity(Message var1);
+
+    void finishStopActivity(Message var1);
+
+    void finish(IBinder var1) throws Exception;
+}
